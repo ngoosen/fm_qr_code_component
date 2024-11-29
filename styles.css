@@ -19,10 +19,51 @@ html {
 }
 
 body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  width: 100vw;
+  height: 100vh;
+
+  text-align: center;
+
   background-color: var(--light-blue);
 }
 
+main {
+  width: min(70%, 400px);
+
+  padding: 20px;
+
+  border-radius: 20px;
+  background-color: #ffffff;
+}
+
+main h1 {
+  font-weight: 700;
+  font-size: 24px;
+
+  margin: 20px;
+}
+
+main p {
+  font-size: 15px;
+  font-weight: 400;
+  margin: 20px;
+}
+
+.qr_code img {
+  width: 100%;
+
+  border-radius: 20px;
+}
+
 .attribution {
+  position: absolute;
+  bottom: 0;
+
   font-size: 11px;
   text-align: center;
 }
